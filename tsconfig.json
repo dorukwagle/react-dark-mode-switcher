@@ -9,6 +9,7 @@
     "declarationDir": "types",
     "sourceMap": true,
     "declaration": true,
+    "allowSyntheticDefaultImports": true,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
