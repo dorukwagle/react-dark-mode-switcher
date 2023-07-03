@@ -25,5 +25,6 @@ const DarkModeSwitcher = ({ size = 30 }: Props) => {
         />
     );
 };
+
 export type { Props };
 export default DarkModeSwitcher;
