@@ -6,7 +6,7 @@ export interface DarkModeSwitcherProps {
     size?: number;
 }
 
-const DarkModeSwitcher: React.FC<DarkModeSwitcherProps> = ({ size = 30 }: DarkModeSwitcherProps) => {
+const DarkSwitcher: React.FC<DarkModeSwitcherProps> = ({ size = 30 }: DarkModeSwitcherProps) => {
     const { colorTheme, setTheme } = useDarkSide();
     const [darkSide, setDarkSide] = useState(
         colorTheme === "light" ? true : false
@@ -26,4 +26,4 @@ const DarkModeSwitcher: React.FC<DarkModeSwitcherProps> = ({ size = 30 }: DarkMo
     );
 };
 
-export default DarkModeSwitcher;
+export default DarkSwitcher;

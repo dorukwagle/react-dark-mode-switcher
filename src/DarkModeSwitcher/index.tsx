@@ -1,2 +1,2 @@
-import DarkModeSwitcher from "./DarkModeSwitcher";
+import DarkModeSwitcher from "./DarkSwitcher";
 export default DarkModeSwitcher;
