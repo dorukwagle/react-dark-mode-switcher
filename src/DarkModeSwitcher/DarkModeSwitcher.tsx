@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import ToggleSwitch from "./components/ToggleSwitch";
 import useDarkSide from "./hooks/useDarkSide";
 
@@ -6,7 +6,7 @@ export interface DarkModeSwitcherProps {
     size?: number;
 }
 
-const DarkModeSwitcher = ({ size = 30 }: DarkModeSwitcherProps) => {
+const DarkModeSwitcher: React.FC<DarkModeSwitcherProps> = ({ size = 30 }: DarkModeSwitcherProps) => {
     const { colorTheme, setTheme } = useDarkSide();
     const [darkSide, setDarkSide] = useState(
         colorTheme === "light" ? true : false
@@ -19,7 +19,7 @@ const DarkModeSwitcher = ({ size = 30 }: DarkModeSwitcherProps) => {
 
     return (
         <ToggleSwitch
-            checked={darkSide}
+            checked={darkSide}  
             onChange={toggleDarkMode}
             size={size}
         />

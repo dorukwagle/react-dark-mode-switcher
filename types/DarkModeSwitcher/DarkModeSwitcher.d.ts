@@ -1,6 +1,6 @@
-/// <reference types="react" />
+import React from "react";
 export interface DarkModeSwitcherProps {
     size?: number;
 }
-declare const DarkModeSwitcher: ({ size }: DarkModeSwitcherProps) => JSX.Element;
+declare const DarkModeSwitcher: React.FC<DarkModeSwitcherProps>;
 export default DarkModeSwitcher;
